@@ -7,10 +7,7 @@ const app = express();
 app.set('view engine','ejs');
 
 //Setando princial
-app.get("/",(req,res)=>{
-    res.render("index");
-});
-
+app.get("/",(req,res)=>{res.render("index");});
 
 //Iniciando Servidor
 app.listen(3000,()=>{console.log("Servidor Iniciado com Sucesso!");});
