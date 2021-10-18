@@ -4,6 +4,8 @@
 const express = require("express");
 const app = express();
 
+app.set('view engine','ejs');
+
 //Setando princial
 app.get("/",(req,res)=>{
     res.send("Bem Vindo ao AForum!");
@@ -11,6 +13,4 @@ app.get("/",(req,res)=>{
 
 
 //Iniciando Servidor
-app.listen(3000,()=>{
-    console.log("Servidor Iniciado com Sucesso!");
-});
+app.listen(3000,()=>{console.log("Servidor Iniciado com Sucesso!");});
