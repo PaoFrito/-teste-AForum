@@ -8,7 +8,7 @@ app.set('view engine','ejs');
 
 //Setando princial
 app.get("/",(req,res)=>{
-    res.send("Bem Vindo ao AForum!");
+    res.render("index");
 });
 
 
