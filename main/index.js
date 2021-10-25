@@ -12,15 +12,11 @@ app.use(express.static('public'));
 
 //Setando princial
 app.get("/",(req,res)=>{
-    var name = "Joaozinho";
-    var language = "NodeJS";
-    var title = "Podem me Ajudar? :(";
+    res.render("index");
+});
 
-    res.render("index",{
-        name: name,
-        language: language,
-        title: title
-    });
+app.get("/thread",(req,res)=>{
+    res.render("thread");
 });
 
 //Iniciando Servidor
