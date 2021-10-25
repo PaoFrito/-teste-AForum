@@ -1,5 +1,4 @@
-<%-include("partials/header.ejs")-%>
-    <br>  
+<%-include("partials/header.ejs")-%> 
     <div class="container" style="width: 70%; margin-top:80px;">
         <div class="card">
             <div class="card-header"> 
@@ -7,7 +6,7 @@
             </div>
             <div class="card-body">                
                 <div>
-                    <form>
+                    <form method="POST" action="/createThread">
                         <input type="text" placeholder="Qual a sua dificuldade?" class="form-control">
                         <br>
                         <textarea placeholder="Descreva sua dúvida" class="form-control"></textarea> 
@@ -17,4 +16,4 @@
             </div>
         </div>
     </div>
-<%-include("partials/footer.ejs")-%> 
+<%-include("partials/footer.ejs")-%>
