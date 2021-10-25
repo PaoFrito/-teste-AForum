@@ -19,5 +19,9 @@ app.get("/thread",(req,res)=>{
     res.render("thread");
 });
 
+app.post("/createThread",(req,res)=>{
+     
+});
+
 //Iniciando Servidor
 app.listen(3000,()=>{console.log("Servidor Iniciado com Sucesso!");});
