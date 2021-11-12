@@ -6,6 +6,7 @@ body{
 }
 
 #btn01{
+    background-color: rgb(64, 165, 224);
     position: relative;
     border-left-style: solid;
     border-left-width: 8px;
