@@ -2,8 +2,22 @@
     <div class="container">
         <h1>Bem vindo ao AForum!</h1>
         <hr>
+        
         <div>
-            
+            <h3>Últimas Perguntas</h3>
+            <div style="margin-top: 50px;">
+                <% threads.forEach(threads => { %>
+                    <div class="card" style="margin-top: 16px; margin-bottom: 16px; margin-left: 10%; margin-right: 10%;">
+                        <div class="card-header">
+                            <h5><%= threads.title %></h5>
+                        </div>
+                        <div class="card-body">
+                            <p><%= threads.content %></p>
+                            <a href="/thread/<%= threads.id %>"><button id="btn01">Responder</button></a>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
         </div>
     </div>
 <%-include("partials/footer.ejs")-%> 

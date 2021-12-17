@@ -5,6 +5,13 @@ body{
     width: 100%;
 }
 
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
 #btn01{
     background-color: rgb(64, 165, 224);
     position: relative;

@@ -13,3 +13,5 @@ const thread = connection.define('thread',{
 },{});
 
 thread.sync({force:false}).then(()=>{});
+
+module.exports = thread;
