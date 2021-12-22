@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const connection = new Sequelize(
-    /* DB neme: */ 'aforum_db',
+    /* DB name: */ 'aforum_db',
     /* DB user: */ 'root',
     /* DB password: */ '',{
     /* Host: */ host: 'localhost',
