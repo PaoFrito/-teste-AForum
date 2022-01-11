@@ -4,7 +4,7 @@
 const express = require('express');
 const app = express();
 
-const ServerPort = 3000;
+const PORT = 3000;
 
 //Importando Body-Parser
 app.use(express.urlencoded({extended: false}));
@@ -89,4 +89,4 @@ app.post("/saveAnswer", (req, res)=>{
 });
 
 //Iniciando Servidor
-app.listen(ServerPort,()=>{console.log("[ Servidor Iniciado com Sucesso na porta "+ ServerPort + "! ]");});
+app.listen(PORT,()=>{console.log("[ Servidor Iniciado com Sucesso na porta "+ PORT + "! ]");});
