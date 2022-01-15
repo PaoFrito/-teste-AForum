@@ -89,4 +89,4 @@ app.post("/saveAnswer", (req, res)=>{
 });
 
 //Iniciando Servidor
-app.listen(PORT,()=>{console.log("[ Servidor Iniciado com Sucesso na porta ${PORT} ! ]");});
+app.listen(PORT,()=>{console.log(`[ Servidor Iniciado com Sucesso na porta ${PORT} ! ]`);});
